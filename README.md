@@ -16,6 +16,9 @@ Microsoft Intune (Endpoint Manager) deployments.
 - Scripts are designed to run in SYSTEM context unless stated otherwise
 - Logging is written to C:\ProgramData where applicable
 
+        $wshell = New-Object -ComObject Wscript.Shell
+        $wshell.popup("learn with ClougManagePro",0,"Done",0x1)
+
 ## Popup_Message Explanation
     - $wshell
 This is a variable
@@ -26,9 +29,9 @@ Think of it as:
 
 ## New-Object -ComObject Wscript.Shell
 This means:
-     - New-Object → create something new
--ComObject → use a Windows built-in component
-Wscript.Shell → a Windows automation tool
+    - New-Object → create something new
+    -ComObject → use a Windows built-in component
+    - Wscript.Shell → a Windows automation tool
 Together:
 “Create a Windows automation object that can show popups”
 
