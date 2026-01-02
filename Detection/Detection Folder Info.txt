@@ -1,0 +1,2 @@
+Detection
+Detection scripts for Win32 apps
